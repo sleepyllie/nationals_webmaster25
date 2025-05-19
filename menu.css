@@ -1,0 +1,282 @@
+*{
+    /* margin: 0;  */
+    padding: 0;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: Karla;
+    box-sizing: border-box;
+}
+body {
+    background-image: url("images/cutveg.jpg");
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* Top Navbar */
+.Logo{
+    float: left;
+}
+.Logo ul{
+    list-style-type: none;
+}
+.Logo ul li{
+    display: inline;
+    margin-top: 0;
+}
+.text-right{
+    text-align: right;
+}
+.quicklinks{
+    padding-top: 1px;
+    line-height: 60px;
+    font-size: 15px;
+}
+.quicklinks a{
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.quicklinks a:hover {
+    background-color: rgb(50, 104, 161);
+    padding: 15px;
+    text-decoration: underline ;
+    color: white;
+    border-radius: 8px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.quicklinks ul{
+    list-style-type: none;
+}
+.quicklinks ul li{
+    display: inline;
+    padding: 1%;
+}
+.clearfix{
+    clear:both;
+    float:none;
+}
+a{
+    /* potential colors: #93C560 */
+    color:#75a140;
+    font-weight: bold;
+    text-decoration: none;
+}
+.padding{
+    padding: 10px;
+}
+
+.Navbar{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.dark-background{
+    background-color:rgb(50, 104, 161);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+    box-shadow: -1px 18px 68px 5px rgba(0,0,0,0.75);
+}
+.dark-background a{
+    color: white;
+}
+.dark-background a:hover{
+    background-color: white;
+    color: rgb(194, 48, 104);
+    border-color: rgb(50, 104, 161);
+}
+/* Menu Navigation */
+
+.menu_nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-color: #ffffff;
+}
+
+.menu_nav li {
+  float: left;
+  
+}
+.menu_nav li a:hover{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.menu_nav li i{
+    font-size: 18.5px;
+    text-align: center;
+    padding: 14px 14px;
+    color: #75a140;
+}
+.menu_nav li a {
+    display: block;
+    color: #75a140;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+    
+}
+
+.menu_nav li a:hover {
+    background-color: #e6e6e6;
+}
+
+/* Menu Body*/
+.menu_nav {
+    margin-top: 25px;
+    margin-left: 28%;
+    margin-right: 28%;
+    border-bottom: 4px solid rgb(199, 199, 199);
+}
+.menu {
+    margin-top: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 8px;
+    border: 5px solid rgba(220, 220, 220, 0.615);
+    padding: 3%;
+   
+}
+.menu h3 {
+    font-weight: 100px;
+    font-family: "Jua", sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 7%;
+}
+
+.item {
+    display: block;
+    padding: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1.5px solid rgb(201, 224, 201);
+    border-radius: 5px;
+    line-height: 20px;
+}
+.item h5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 15px;
+    font-size: 18px;
+    font-family: "Jua", sans-serif;
+}
+.item p{
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.price {
+    color: black;
+}
+.add-to-cart{
+    background-color: white;
+    border: none;
+    float: right;
+    cursor: pointer;
+    
+}
+.add-to-cart span:hover{
+    color: blue;
+    font-size: 30px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* CART */
+.sidepanel  {
+    border-radius: 5px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 70%;
+    top: 17%;
+    bottom: 17%;
+    right: 3%; 
+    background-color: white;
+    box-shadow: none;
+    border: none;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.sidepanel h2 {
+  color: black;
+  font-family: "Noto Sans Mono", sans-serif;
+}
+.sidepanel ul {
+    font-family: "Noto Sans Mono", sans-serif;
+}
+.sidepanel p{
+    font-family: "Noto Sans Mono", sans-serif;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: #75a140;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  border: none;
+}
+.openbtn p {
+    font-family: "Dongle", sans-serif;
+    margin-top: 10px;
+    padding-right: 15px;
+    margin-bottom: 8px;
+}
+.openbtn:hover {
+  background-color:rgb(228, 228, 228);
+}
+
+.divider {
+    padding: 1px;
+    border-bottom: 1px dotted black;
+    margin-left: 8%;
+    margin-right: 8%;
+}
