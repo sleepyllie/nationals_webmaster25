@@ -179,3 +179,44 @@ a{
     color: rgb(194, 48, 104);
     border-color: rgb(50, 104, 161);
 }
+/* FOR THE ABOUT PAGE */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.text {
+    text-align: center;
+    /* border-left: 1px solid gray; */
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 25px;
+}
+.about_header {
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.divider {
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.divider2 {
+    padding: 10px;
+    border-bottom: 2px solid gray;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.image-container {
+    padding: 20px;
+ 
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
