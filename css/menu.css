@@ -80,6 +80,7 @@ body {
     top: 0;
     margin-left: -8px;
     margin-right: -8px;
+    z-index: 9999;
 }
 
 .dark-background{
