@@ -169,9 +169,6 @@ body {
     border: 1.5px solid rgb(201, 224, 201);
     border-radius: 5px;
     line-height: 20px;
-    position: relative;
-    z-index: -1;
-    
 }
 .item h5 {
     margin-top: 5px;
