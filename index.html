@@ -12,6 +12,7 @@
 
     <!--Link of CSS File-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!--Navbar Start-->
@@ -38,9 +39,9 @@
 
     <!--Menu Thing Start-->
     <section class="Menu" id = "Menu">
-        <h1 style = "color: rgb(0, 0, 0); text-align: center; padding: 10px; font-size: 40px; border-bottom: 2px solid rgb(68, 122, 59); margin-left: 30%; margin-right: 30%; font-family: Karla;">Choripan Grill</h1>
+        <h1 style = "color: rgb(0, 0, 0); text-align: center; padding: 10px; font-size: 40px; border-bottom: 2px solid rgb(68, 122, 59); margin-left: 30%; margin-right: 30%; font-family: Karla;" data-aos = "zoom-out" data-aos-duration = "1000" data-aos-delay = "100">Choripan Grill</h1>
         <div class = "padding"></div>
-        <div class = "message-container">
+        <div class = "message-container" data-aos = "zoom-in-left" data-aos-duration = "1000" data-aos-delay = "100">
             <p><h3 style = "text-shadow: 2px 2px rgb(204, 218, 233)">Welcome to Choripan Grill!</h2><br> We are a sustainable South American cuisine restaurant which specializes in vegetarian dishes. We offer takeout, and dine in! You can learn more about us by clicking "About" on the header. To view our menu, click on either "Menu" in the header, or the menu on this page! </p>
         </div>
         <div class="menu-container">
@@ -78,5 +79,7 @@
             }
         })
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
