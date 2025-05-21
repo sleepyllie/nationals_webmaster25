@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body{
             text-align: center;
@@ -56,17 +56,32 @@
         .homebtn a:hover{
             color: rgb(53, 90, 37);
         }
+        /* ANIMATIONS */
+        .aos-init[data-aos][data-aos].aos-animate {
+            transform: unset;
+        }
+        [data-aos] {
+        pointer-events: none;
+        }
+        .aos-animate {
+        pointer-events: auto;
+        }
+        .aos-init[data-aos][data-aos].aos-animate {
+        transform: unset;
+        } 
     </style>
 </head>
 <body>
-    <div class = "container">
+    <div class = "container" data-aos = "fade-right" data-aos-duration = "1000" data-aos-delay = "100">
         <h1>Thank you for ordering from us!</h1>
         <p>We make sure to provide the upmost quality for your meals. <br> - <span style = "color: rgb(200, 18, 51);">❤︎</span>, the Choripan Grill staff.</p>
     </div>
     <div class = "space"></div>
-    <div class = "homebtn">
+    <div class = "homebtn" data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "100">
         <a href = "index.html">Return Home</a>
     </div>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
+
