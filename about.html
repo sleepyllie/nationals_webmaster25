@@ -34,7 +34,7 @@
         </div>
     </section>
     <!--Navbar End-->
-    <div class = "about_header">
+    <div class = "about_header" id = "ABOUT">
         <h2>About Choripan Grill: <i>What makes us " <span style = "color: rgb(106, 156, 93);">green</span> " ?</i></h2>
         <div class = "divider"></div>
     </div>
@@ -44,23 +44,53 @@
             <img src="images/farmgreen.jpg" width = 700 height = 400 >
         </div>
         <div class="text">
-            <p>Choripan Grill is dedicated to supported local farmers. We realize the importance of <br>
+            <p> <span style = "color:rgb(106, 156, 93); font-size: 20px; font-weight: bold; ">1. &emsp;</span>Choripan Grill is dedicated to supported local farmers. We realize the importance of <br>
                 agricultural sustainability, and we commit ourselves to directly sourcing from farms that prioritize <br>
                 sustainable farming practices.<br><br><br>
-                By sourcing from local farms, we eliminate the need for long transportation, which ultimately <br>
+                <span style = "color:rgb(106, 156, 93); font-size: 20px; font-weight: bold; ">2. &emsp;</span> By sourcing from local farms, we eliminate the need for long transportation, which ultimately <br>
                 leads to waste in our atmosphere.<br><br><br>
-                Our restaurant is fully vegetarian, reducing gas emissions, soil and water pollution, and resource <br>
+                <span style = "color:rgb(106, 156, 93); font-size: 20px; font-weight: bold; ">3. &emsp;</span>Our restaurant is fully vegetarian, reducing gas emissions, soil and water pollution, and resource <br>
                 intensive practices cattle farming induces. We compost organic food waste, reducing the need for <br>
                 chemical fertilizers.<br><br> <br>
-                At Choripan Grill, we hope to make a real impact on reducing the carbon footprint of humanity, <br> while
+                <span style = "color:rgb(106, 156, 93); font-size: 20px; font-weight: bold; ">4. &emsp;</span>At Choripan Grill, we hope to make a real impact on reducing the carbon footprint of humanity, <br> while
                 also providing incredible, vegetarian South American food to customers.</p>            
         </div>
-        
     </div>
     <div class = "divider2"></div>
     <div class = "contact">
-
+        <div class = "contact-header">
+            <h2>Contact Us: </h2>
+            <div class = "border" style = "border-bottom: 1px solid gray; margin-right: 30%; padding: 5px;"></div>
+            <div class = "space" style = "padding: 10px;"></div>
+            <p>Feel free to email us on any questions you may have, and <br> we'll get back to you as soon as possible!</p>
+            <div class = "space" style = "padding: 10px;"></div>
+            <p>Or, take a look at our social medias!</p>
+        </div>
+        <div class = "contact-info">
+            <h2>Questions?</h2>
+            <div class = "space" style = "padding: 5px;"></div>
+            <p><span>Email:</span>&emsp;choripangrill@gmail.com</p>
+            <div class = "space" style = "padding: 5px;"></div>
+            <div class = "space" style = "padding: 10px;"></div>
+            <h2>Find Us!</h2>
+            <div class = "space" style = "padding: 5px;"></div>
+            <p><span>Instagram:</span>&emsp;@choripangrill_us</p>
+            <div class = "space" style = "padding: 5px;"></div>
+            <p><span>Facebook:</span>&emsp;@choripan_grill</p>
+        </div>
     </div>
-    
+    <script>
+        // changing the header background.
+        var navOffset = document.getElementById("ABOUT").offsetTop;
+        window.addEventListener("scroll", () => {
+            const scrollPos = window.scrollY;
+            var nav = document.getElementById("Navbar");
+            if (scrollPos > navOffset){
+                nav.classList.add("dark-background");
+            } else {
+                nav.classList.remove("dark-background");
+            }
+        })
+    </script>
 </body>
 </html>
