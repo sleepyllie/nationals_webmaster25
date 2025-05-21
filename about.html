@@ -10,6 +10,7 @@
 
     <!--Link of CSS File-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -35,11 +36,11 @@
     </section>
     <!--Navbar End-->
     <div class = "about_header" id = "ABOUT">
-        <h2>About Choripan Grill: <i>What makes us " <span style = "color: rgb(106, 156, 93);">green</span> " ?</i></h2>
+        <h2 data-aos = "zoom-out" data-aos-duration = "1000" data-aos-delay = "100">About Choripan Grill: <i>What makes us " <span style = "color: rgb(106, 156, 93);">green</span> " ?</i></h2>
         <div class = "divider"></div>
     </div>
     
-    <div class = "about">
+    <div class = "about" data-aos = "fade-right" data-aos-duration = "1000" data-aos-delay = "100">
         <div class="image-container">
             <img src="images/farmgreen.jpg" width = 700 height = 400 >
         </div>
@@ -57,7 +58,7 @@
         </div>
     </div>
     <div class = "divider2"></div>
-    <div class = "contact">
+    <div class = "contact" data-aos = "zoom-in-up" data-aos-duration = "1000" data-aos-delay = "100">
         <div class = "contact-header">
             <h2>Contact Us: </h2>
             <div class = "border" style = "border-bottom: 1px solid gray; margin-right: 30%; padding: 5px;"></div>
@@ -92,5 +93,7 @@
             }
         })
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
