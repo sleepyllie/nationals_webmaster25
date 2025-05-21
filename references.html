@@ -10,6 +10,8 @@
 
     <!--Link of CSS File-->
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
 </head>
 <body>
     <!--Navbar Start-->
@@ -33,20 +35,20 @@
         </div>
     </section>
     <!--Navbar End-->
-    <h2 style = "text-align: center;">Choripan: Grill: Sources </h2>
+    <h2 style = "text-align: center;" data-aos = "zoom-out" data-aos-duration = "1000" data-aos-delay = "100">Choripan: Grill: Sources </h2>
     <div class = "divider"></div>
-    <div class = "references">
+    <div class = "references" data-aos = "fade-up-right" data-aos-duration = "1000" data-aos-delay = "100">
         <div class = "references-header">
             <h2>References :</h2><br>
             <div class = "divi" style = "border-top: 1px solid gray; padding: 5px; margin-right: 2%;"></div>
             <p>This website uses outside images.<br> Click on each link to see where we found them.</p>
-            <p>
-                Here are the references we have used for this website:
+            <p>Here are the references we have used for this website:
                 <br>
             </p>
         </div>
         
         <div class="references-text">
+            <a onclick = "window.open('pow.jpg')">Click here to view our plan of work log!</a><br><br>
             <span>1.&emsp;</span><a href="https://unsplash.com/photos/sliced-fruits-on-white-ceramic-plate-lN92R8SjASI 
                             ">Myznik, Egor. "sliced fruits on white ceramic plate". unsplash.com. 4 June 2020,
                 <i>https://unsplash.com/photos/sliced-fruits-on-white-ceramic-plate-lN92R8SjASI</i>
@@ -85,5 +87,8 @@
             </a>
         </div>
     </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
