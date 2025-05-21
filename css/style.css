@@ -52,12 +52,7 @@
     clear:both;
     float:none;
 }
-a{
-    /* potential colors: #93C560 */
-    color:#75a140;
-    font-weight: bold;
-    text-decoration: none;
-}
+
 .padding{
     padding: 10px;
 }
@@ -115,6 +110,10 @@ a{
 .content h2{
     margin-bottom: 1rem;
 }
+.content a:hover {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 .cover{
     position: absolute;
@@ -160,6 +159,12 @@ a{
     background-color: white;
     top: 0;
 }
+.Navbar a{
+    /* potential colors: #93C560 */
+    color:#75a140;
+    font-weight: bold;
+    text-decoration: none;
+}
 
 .dark-background{
     background-color:rgb(50, 104, 161);
@@ -186,12 +191,13 @@ a{
     justify-content: center;
 }
 .text {
-    text-align: center;
+    /* text-align: center; */
     /* border-left: 1px solid gray; */
     padding-top: 20px;
     padding-left: 20px;
     margin-top: 25px;
 }
+
 .about_header {
     padding-top: 15px;
     text-align: center;
@@ -212,11 +218,68 @@ a{
 
 .image-container {
     padding: 20px;
- 
 }
 
 .image-container img {
     max-width: 100%;
     border-radius: 10px;
-    
+}
+.contact{
+    padding: 5%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+}
+
+.contact-header {
+    text-align: left;
+    flex: 30%;
+}
+.contact-info {
+    margin-top: 20px;
+    flex: 10%;
+}
+.contact-info span {
+    font-size: larger;
+    font-weight: bold;
+    color:#3e581e;
+}
+
+/* FOR THE REFERENCES PAGE. */
+.references {
+    padding: 5%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 15px 10px rgb(73, 107, 146);
+}
+.references_header {
+    flex: 50%;
+    text-align: left;
+}
+.references-text {
+    font-size: 15px;
+    flex: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-left: 5px solid rgba(128, 128, 128, 0.308);
+    padding-left: 5%;
+}
+.references-text span {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3e581e;
+    padding: 20px;
+}
+.references-text a {
+    text-decoration: none;
 }
